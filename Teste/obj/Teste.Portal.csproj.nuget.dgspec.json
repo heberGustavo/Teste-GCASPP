@@ -1,0 +1,470 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste\\Teste.Portal.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj",
+        "projectName": "Teste.Common",
+        "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj",
+        "packagesPath": "C:\\Users\\Heber Gustavo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heber Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.CrossCutting\\Teste.CrossCutting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.CrossCutting\\Teste.CrossCutting.csproj",
+        "projectName": "Teste.CrossCutting",
+        "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.CrossCutting\\Teste.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\Heber Gustavo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.CrossCutting\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heber Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\Teste.Data.csproj": {
+                "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\Teste.Data.csproj"
+              },
+              "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Migration\\Teste.Migration.csproj": {
+                "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Migration\\Teste.Migration.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\Teste.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\Teste.Data.csproj",
+        "projectName": "Teste.Data",
+        "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\Teste.Data.csproj",
+        "packagesPath": "C:\\Users\\Heber Gustavo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heber Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj": {
+                "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj"
+              },
+              "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\Teste.Domain.csproj": {
+                "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\Teste.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\Teste.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\Teste.Domain.csproj",
+        "projectName": "Teste.Domain",
+        "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\Teste.Domain.csproj",
+        "packagesPath": "C:\\Users\\Heber Gustavo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heber Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj": {
+                "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Migration\\Teste.Migration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Migration\\Teste.Migration.csproj",
+        "projectName": "Teste.Migration",
+        "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Migration\\Teste.Migration.csproj",
+        "packagesPath": "C:\\Users\\Heber Gustavo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Migration\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heber Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj": {
+                "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj"
+              },
+              "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\Teste.Domain.csproj": {
+                "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\Teste.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "dbup": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "dbup-sqlserver": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste\\Teste.Portal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste\\Teste.Portal.csproj",
+        "projectName": "Teste.Portal",
+        "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste\\Teste.Portal.csproj",
+        "packagesPath": "C:\\Users\\Heber Gustavo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heber Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.CrossCutting\\Teste.CrossCutting.csproj": {
+                "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.CrossCutting\\Teste.CrossCutting.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -4,14 +4,14 @@
     "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\Teste.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\Teste.Data.csproj": {
+    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\Teste.Data.csproj",
-        "projectName": "Teste.Data",
-        "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\Teste.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj",
+        "projectName": "Teste.Common",
+        "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj",
         "packagesPath": "C:\\Users\\Heber Gustavo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\obj\\",
+        "outputPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -44,6 +44,85 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\Teste.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\Teste.Data.csproj",
+        "projectName": "Teste.Data",
+        "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\Teste.Data.csproj",
+        "packagesPath": "C:\\Users\\Heber Gustavo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heber Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj": {
+                "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj"
+              },
+              "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\Teste.Domain.csproj": {
+                "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\Teste.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
             "AutoMapper": {
               "target": "Package",
               "version": "[11.0.0, )"
@@ -60,15 +139,77 @@
               "target": "Package",
               "version": "[2.0.78, )"
             },
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[3.0.1, )"
-            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.10, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\Teste.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\Teste.Domain.csproj",
+        "projectName": "Teste.Domain",
+        "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\Teste.Domain.csproj",
+        "packagesPath": "C:\\Users\\Heber Gustavo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Heber Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj": {
+                "projectPath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Common\\Teste.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",

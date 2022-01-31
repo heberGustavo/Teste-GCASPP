@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "3Ll2VEBfJoN8WivGLLuIA7WDWccaMk6cmBs/iCUZataqtM9gQaKZQHNVZt464ag2JlDa6vS4ZJLQX+rVO7y8pQ==",
+  "dgSpecHash": "j5oT90/XHf/q3ij0WqH2O2kbBsFcgylxOKs6shZEsRifYGNC92QLLv8jFGg9Y2LCHIUF7HkrtbHOwWJMptDSaw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Heber Gustavo\\OneDrive\\Área de Trabalho\\projetos\\Teste\\Teste.Domain\\Teste.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.10\\microsoft.extensions.configuration.3.1.10.nupkg.sha512",
+    "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.10\\microsoft.extensions.configuration.abstractions.3.1.10.nupkg.sha512",
+    "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\3.1.10\\microsoft.extensions.configuration.fileextensions.3.1.10.nupkg.sha512",
+    "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.extensions.configuration.json\\3.1.10\\microsoft.extensions.configuration.json.3.1.10.nupkg.sha512",
+    "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.10\\microsoft.extensions.fileproviders.abstractions.3.1.10.nupkg.sha512",
+    "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.10\\microsoft.extensions.fileproviders.physical.3.1.10.nupkg.sha512",
+    "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.10\\microsoft.extensions.filesystemglobbing.3.1.10.nupkg.sha512",
+    "C:\\Users\\Heber Gustavo\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.10\\microsoft.extensions.primitives.3.1.10.nupkg.sha512"
+  ],
   "logs": []
 }
