@@ -49,6 +49,9 @@ namespace Teste.Domain.Business
             
         }
 
+        public Task<ResultResponseModel> Excluir(int id)
+            => _funcionarioRepository.Excluir(id);
+
         public Task<Funcionario> ObterFuncionarioPorId(int id)
             => _funcionarioRepository.GetById(id);
 

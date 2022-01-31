@@ -89,7 +89,7 @@ function VerificaSeCamposObrigatoriosPreenchidos() {
         swal("Opss...", "Preencha o campo Salário", "error");
         return false;
     }
-    if ($("#salario").val() == "0") {
+    if (ConverterParaFloat($("#salario").val()) <= 0.0000000) {
         swal("Opss...", "Informe um valor maior que 0", "error");
         return false;
     }

@@ -57,5 +57,8 @@ namespace Teste.Domain.Business
 
         public Task<IEnumerable<FilhoBody>> ObterTodosFilhos()
             => _filhoRepository.ObterTodosFilhos();
+
+        public Task<int> VerificaSeExisteFilhoCadastrado(int id)
+            => _filhoRepository.VerificaSeExisteFilhoCadastrado(id);
     }
 }

@@ -50,5 +50,17 @@ namespace Teste.Data.Repository
 	                                                               TB_FUNCIONARIO fun ON fun.id = fil.id_funcionario
                                                                ORDER BY 
 	                                                               fil.nome");
+
+        public async Task<int> VerificaSeExisteFilhoCadastrado(int id)
+        {
+            var result = await _dataContext.Connection.QueryAsync<Filho>(@"SELECT *
+                                                                           FROM TB_FILHO
+                                                                           WHERE id_funcionario = @id", new { id });
+
+            if (result.Count() >= 1)
+                return 1; //Tem elementos
+            else
+                return 0; //Lista vazia
+        }
     }
 }

@@ -12,5 +12,6 @@ namespace Teste.Domain.IRepository
     {
         Task<IEnumerable<FilhoBody>> ObterTodosFilhos();
         Task<ResultResponseModel> Excluir(int id);
+        Task<int> VerificaSeExisteFilhoCadastrado(int id);
     }
 }

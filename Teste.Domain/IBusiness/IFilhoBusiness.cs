@@ -15,5 +15,6 @@ namespace Teste.Domain.IBusiness
         Task<Filho> ObterFilhoPorId(int id);
         Task<ResultResponseModel> Editar(Filho model);
         Task<ResultResponseModel> Excluir(int id);
+        Task<int> VerificaSeExisteFilhoCadastrado(int id);
     }
 }

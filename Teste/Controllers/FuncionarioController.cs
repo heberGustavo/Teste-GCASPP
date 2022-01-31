@@ -15,10 +15,12 @@ namespace Teste.Controllers
     public class FuncionarioController : Controller
     {
         private readonly IFuncionarioBusiness _funcionarioBusiness;
+        private readonly IFilhoBusiness _filhoBusiness;
 
-        public FuncionarioController(IFuncionarioBusiness funcionarioBusiness)
+        public FuncionarioController(IFuncionarioBusiness funcionarioBusiness, IFilhoBusiness filhoBusiness)
         {
             _funcionarioBusiness = funcionarioBusiness;
+            _filhoBusiness = filhoBusiness;
         }
 
         [HttpGet]
@@ -79,6 +81,27 @@ namespace Teste.Controllers
 
                 return Json(new { erro = true, mensagem = "Já existe funcionário com esses dados!" });
 
+            }
+            catch(Exception e)
+            {
+                return Json(new { erro = true, mensagem = "Ocorreu um erro. Contate o administrador." });
+            }
+        }
+
+        [HttpGet]
+        public async Task<JsonResult> Excluir(int id)
+        {
+            try
+            {
+                var listaFilho = await _filhoBusiness.VerificaSeExisteFilhoCadastrado(id);
+
+                if(listaFilho >= 1)
+                {
+                    return Json(new { erro = true, mensagem = "Não é possivel excluir um funcionário com algum filho cadastrado. Verifique e tente novamente!" } );
+                }
+
+                var result = await _funcionarioBusiness.Excluir(id);
+                return Json(new { erro = result.erro, mensagem = result.mensagem });
             }
             catch(Exception e)
             {

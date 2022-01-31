@@ -92,7 +92,7 @@ namespace Teste.Controllers
             }
             catch
             {
-                return Json(true, "Ocorreu um erro. Contate o administrador.");
+                return Json(new { erro = true, mensagem = "Ocorreu um erro. Contate o administrador." });
             }
         }
 

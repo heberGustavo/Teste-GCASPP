@@ -14,5 +14,6 @@ namespace Teste.Domain.IBusiness
         Task<Funcionario> ObterFuncionarioPorId(int id);
         Task<ResultResponseModel> Editar(Funcionario model);
         Task<int> VerificaSeExisteCadastrado(string nome, decimal salario);
+        Task<ResultResponseModel> Excluir(int id);
     }
 }

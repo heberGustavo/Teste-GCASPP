@@ -11,5 +11,6 @@ namespace Teste.Domain.IRepository
     {
         Task<IEnumerable<Funcionario>> ObterTodosFuncionarios();
         Task<int> VerificaSeExisteCadastrado(string nome, decimal salario);
+        Task<ResultResponseModel> Excluir(int id);
     }
 }

@@ -37,5 +37,24 @@ namespace Teste.Data.Repository
                 return 0; //Lista vazia
                 
         }
+
+        public async Task<ResultResponseModel> Excluir(int id)
+        {
+            try
+            {
+                var result = await _dataContext.Connection.ExecuteAsync(@"DELETE FROM TB_FUNCIONARIO WHERE id = @id;", new { id });
+
+                if (result >= 1)
+                    return new ResultResponseModel(false, "Funcionário excluído com sucesso!");
+                else
+                    return new ResultResponseModel(true, "Erro ao excluir Funcionário. Tente novamente!");
+
+            }
+            catch (Exception e)
+            {
+                return new ResultResponseModel(true, "Ocorreu um erro. Contate o administrador.");
+            }
+        }
+
     }
 }
