@@ -2,12 +2,12 @@
 
 });
 
-function EditarFuncionario(id) {
+function EditarFilho(id) {
 
     $("#cadastrar").text("Editar");
 
     $.ajax({
-        url: "/Funcionario/ObterFuncionarioPorId/" + parseInt(id),
+        url: "/Filho/ObterFilhoPorId/" + parseInt(id),
         type: "GET",
         contentType: 'application/json; charset=UTF-8',
         dataType: "json",
@@ -24,10 +24,10 @@ function EditarFuncionario(id) {
 function PreencherCamposEditar(dados) {
 
     var data = ConverterDataParaUSA(dados.data_de_nascimento);
-    var salario = FormatDinheiro(ConverterParaFloat(dados.salario))
 
     $("#idEditar").val(dados.id);
     $("#nome").val(dados.nome);
     $("#data").val(data);
-    $("#salario").val(salario);
+
+    $("#selectFuncionario").selectpicker('val', dados.id_funcionario)
 }

@@ -1,6 +1,6 @@
 ﻿@{
     Layout = "";
-    @model IEnumerable<Teste.Domain.Models.EntityDomain.Filho>
+    @model IEnumerable<Teste.Domain.Models.Body.FilhoBody>
 }
 
 <table class="table">
@@ -20,10 +20,10 @@
                 <tr>
                     <td>@item.nome</td>
                     <td>@item.data_de_nascimento.ToString("dd/MM/yyyy")</td>
-                    <td>bla bla bla</td>
+                    <td>@item.nome_funcionario</td>
                     <td>
-                        <button onclick="EditarFuncionario(@item.id)" class="btn btn-sm btn-warning btn-sm"><span class="material-icons">edit</span></button>
-                        <button class="btn btn-sm btn-danger btn-sm"><span class="material-icons">delete</span></button>
+                        <button onclick="EditarFilho(@item.id)" class="btn btn-sm btn-warning btn-sm"><span class="material-icons">edit</span></button>
+                        <button onclick="AbrirModalConfirmacao(@item.id)" class="btn btn-sm btn-danger btn-sm"><span class="material-icons">delete</span></button>
                     </td>
                 </tr>
             }

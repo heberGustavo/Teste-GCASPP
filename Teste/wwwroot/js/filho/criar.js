@@ -11,11 +11,11 @@ function Cadastrar() {
             var jsonBody = {
                 nome: $("#nome").val().trim(),
                 data: ConverterDataParaUSA($('#data').val()),
-                salario: FormatDinheiro($("#salario").val())
+                idFuncionario: parseInt($("#selectFuncionario").val())
             };
 
             $.ajax({
-                url: "/Funcionario/Cadastrar",
+                url: "/Filho/Cadastrar",
                 type: "POST",
                 contentType: 'application/x-www-form-urlencoded',
                 dataType: "json",
@@ -28,7 +28,7 @@ function Cadastrar() {
                         swal("Sucesso", response.mensagem, "success")
                             .then((okay) => {
                                 LimparCampos();
-                                ListarDadosFuncionario();
+                                ListarDadosFilho();
                             });
                     }
                 },
@@ -44,11 +44,11 @@ function Cadastrar() {
                 id: parseInt($('#idEditar').val()),
                 nome: $("#nome").val().trim(),
                 data: ConverterDataParaUSA($('#data').val()),
-                salario: FormatDinheiro($("#salario").val())
+                idFuncionario: parseInt($("#selectFuncionario").val())
             };
 
             $.ajax({
-                url: "/Funcionario/Editar",
+                url: "/Filho/Editar",
                 type: "POST",
                 contentType: 'application/x-www-form-urlencoded',
                 dataType: "json",
@@ -61,7 +61,7 @@ function Cadastrar() {
                         swal("Sucesso", response.mensagem, "success")
                             .then((okay) => {
                                 LimparCampos();
-                                ListarDadosFuncionario();
+                                ListarDadosFilho();
                             });
                     }
                 },
@@ -96,8 +96,10 @@ function VerificaSeCamposObrigatoriosPreenchidos() {
 function LimparCampos() {
     $("#nome").val("");
     $("#data").val("");
-    $("#salario").val("");
     $("#idEditar").val("");
+
+    $("#selectFuncionario").val("")
+    $("#selectFuncionario").selectpicker('refresh');
 
     $("#cadastrar").text("Cadastrar");
 }

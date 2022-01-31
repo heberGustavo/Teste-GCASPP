@@ -2,20 +2,17 @@
 
 });
 
-function AbrirModalRemoverContato(id, nome) {
-
-    $("#idUsuarioExcluir").val(id);
-    $("#nomeContato").text(nome);
-
-    $("#modalExcluirContato").modal("show");
+function AbrirModalConfirmacao(id) {
+    $("#idExcluir").val(id);
+    $("#modalConfirmacao").modal("show");
 }
 
 function ConfirmarExclusao() {
 
-    var id = $("#idUsuarioExcluir").val();
+    var id = $("#idExcluir").val();
 
     $.ajax({
-        url: "/Home/ExcluirContato/" + parseInt(id),
+        url: "/Filho/Excluir/" + parseInt(id),
         type: "GET",
         contentType: 'application/json; charset=UTF-8',
         dataType: "json",
@@ -26,8 +23,8 @@ function ConfirmarExclusao() {
             else {
                 swal("Sucesso", response.mensagem, "success")
                     .then((okay) => {
-                        BuscarTodosUsuariosCadastrados();
-                        $("#modalExcluirContato").modal("hide");
+                        ListarDadosFilho();
+                        $("#modalConfirmacao").modal("hide");
                     });
             }
         },

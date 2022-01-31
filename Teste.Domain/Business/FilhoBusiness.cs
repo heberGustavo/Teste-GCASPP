@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Teste.Domain.Models.Body;
 
 namespace Teste.Domain.Business
 {
@@ -33,7 +34,28 @@ namespace Teste.Domain.Business
             }
         }
 
-        public Task<IEnumerable<Filho>> ObterTodosFilhos()
+        public async Task<ResultResponseModel> Editar(Filho model)
+        {
+            try
+            {
+                var result = await _filhoRepository.UpdateAsync(model);
+                if (result == null) return new ResultResponseModel(true, "Erro ao editar Filho. Tente novamente.");
+
+                return new ResultResponseModel(false, "Filho alterado com sucesso!");
+            }
+            catch (Exception e)
+            {
+                return new ResultResponseModel(true, "Ocorreu um erro. Contate o administrador.");
+            }
+        }
+
+        public Task<ResultResponseModel> Excluir(int id)
+            => _filhoRepository.Excluir(id);
+
+        public Task<Filho> ObterFilhoPorId(int id)
+            => _filhoRepository.GetById(id);
+
+        public Task<IEnumerable<FilhoBody>> ObterTodosFilhos()
             => _filhoRepository.ObterTodosFilhos();
     }
 }
