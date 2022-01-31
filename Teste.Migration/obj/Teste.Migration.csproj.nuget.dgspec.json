@@ -43,6 +43,16 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "dbup": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "dbup-sqlserver": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
